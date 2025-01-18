@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="finalproject.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Anthony Younes</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="registration.html"
+                  >Registration</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <main class="container my-5">
+      <section class="text-center mb-4">
+        <h1 class="fw-bold" style="color: #ffffff">
+          Sign Up for Our Newsletter
+        </h1>
+        <p style="color: #ffffff">Stay updated and keep in touch!</p>
+      </section>
+
+      <div class="card shadow-sm p-4 mx-auto" style="max-width: 600px">
+        <form>
+          <!-- Full Name -->
+          <div class="mb-3">
+            <label for="full-name" class="form-label fw-bold">Full Name</label>
+            <input
+              type="text"
+              id="full-name"
+              class="form-control"
+              name="full-name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mb-3">
+            <label for="phone" class="form-label fw-bold">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form-control"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bold">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="mb-4">
+            <label for="confirm-password" class="form-label fw-bold"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              class="form-control"
+              name="confirm-password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-between">
+            <button type="reset" class="btn btn-secondary">Clear</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-4">
+      <div class="container text-center">
+        <div class="mb-3">
+          <a
+            href="https://www.facebook.com/antyouuu003"
+            class="text-white mx-2"
+            target="_blank"
+            ><i class="fab fa-facebook-f fa-lg"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/antyouuu003"
+            class="text-white mx-2"
+            target="_blank"
+            ><i class="fab fa-instagram fa-lg"></i
+          ></a>
+          <a
+            href="https://twitter.com/antyouuu003"
+            class="text-white mx-2"
+            target="_blank"
+            ><i class="fab fa-twitter fa-lg"></i
+          ></a>
+        </div>
+        <p class="mb-0">&copy; 2024 Anthony Younes. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

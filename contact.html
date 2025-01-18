@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="finalproject.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Anthony Younes</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="registration.html"
+                  >Registration</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <div class="container my-5">
+      <!-- Location Section -->
+      <section class="mb-5">
+        <h2 class="fw-bold text-center mb-3">My Location</h2>
+        <div class="card shadow-sm">
+          <div class="card-body p-0">
+            <iframe
+              class="w-100"
+              style="height: 400px; border: none"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093675!2d144.9559283158442!3d-37.81720997975178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce840!2zTWVsYm91cm5lLCBBdXN0cmFsaWE!5e0!3m2!1sen!2s!4v1614132007883!5m2!1sen!2s"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mb-5">
+        <h2 class="fw-bold text-center mb-3">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+              >
+                What services do you offer?
+              </button>
+            </h3>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                I specialize in data science, full-stack development, and
+                building responsive websites.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+              >
+                How can I hire you?
+              </button>
+            </h3>
+            <div id="collapse2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Contact me through the form below or email me for collaboration
+                opportunities.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="faq3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+              >
+                What technologies do you work with?
+              </button>
+            </h3>
+            <div id="collapse3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                I work with JavaScript, Python, HTML, CSS, and frameworks like
+                Bootstrap and React.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="mb-5 text-center">
+        <h2 class="fw-bold mb-3">Subscribe to My Newsletter</h2>
+        <form class="d-inline-flex gap-2">
+          <input
+            type="email"
+            name="email"
+            class="form-control w-50"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </section>
+
+      <!-- Star Rating -->
+      <section class="mb-5 text-center">
+        <h2 class="fw-bold mb-3">Rate My Work</h2>
+        <p>How would you rate my portfolio or services?</p>
+        <div id="rating-stars" class="mb-3">
+          <!-- Stars (span with data-value for rating) -->
+          <span class="fs-2 me-2 star" data-value="1" style="cursor: pointer"
+            >&#9733;</span
+          >
+          <span class="fs-2 me-2 star" data-value="2" style="cursor: pointer"
+            >&#9733;</span
+          >
+          <span class="fs-2 me-2 star" data-value="3" style="cursor: pointer"
+            >&#9733;</span
+          >
+          <span class="fs-2 me-2 star" data-value="4" style="cursor: pointer"
+            >&#9733;</span
+          >
+          <span class="fs-2 star" data-value="5" style="cursor: pointer"
+            >&#9733;</span
+          >
+        </div>
+
+        <!-- Toast -->
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+          <div
+            id="rating-toast"
+            class="toast align-items-center text-bg-success border-0"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="d-flex">
+              <div class="toast-body">Thank you for your feedback!</div>
+              <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JavaScript -->
+      <script>
+        // Star Rating Logic
+        const stars = document.querySelectorAll(".star");
+        const toastElement = document.getElementById("rating-toast");
+        const toast = new bootstrap.Toast(toastElement);
+
+        stars.forEach((star) => {
+          star.addEventListener("click", () => {
+            // Highlight stars up to the clicked one
+            const rating = star.getAttribute("data-value");
+            stars.forEach((s) => {
+              s.classList.remove("text-warning", "text-secondary");
+              s.classList.add(
+                s.getAttribute("data-value") <= rating
+                  ? "text-warning"
+                  : "text-secondary"
+              );
+            });
+
+            // Show Toast
+            toast.show();
+          });
+        });
+      </script>
+
+      <!-- Contact Form -->
+      <section>
+        <h2 class="fw-bold text-center mb-3">Contact Me</h2>
+        <div class="card shadow-sm p-4">
+          <form>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold"
+                >Your Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-end gap-2">
+              <button type="reset" class="btn btn-secondary">Clear</button>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-4">
+      <div class="container text-center">
+        <div class="mb-3">
+          <a
+            href="https://www.facebook.com/antyouuu003"
+            class="text-white mx-2"
+            target="_blank"
+            ><i class="fab fa-facebook-f fa-lg"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/antyouuu003"
+            class="text-white mx-2"
+            target="_blank"
+            ><i class="fab fa-instagram fa-lg"></i
+          ></a>
+          <a
+            href="https://twitter.com/antyouuu003"
+            class="text-white mx-2"
+            target="_blank"
+            ><i class="fab fa-twitter fa-lg"></i
+          ></a>
+        </div>
+        <p class="mb-0">&copy; 2024 Anthony Younes. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
